@@ -3,7 +3,7 @@ import React from "react"
 export default function Nav() {
     return(
         <nav>
-            <p>hello</p>
+            <img src="/Logo.png" alt="little-lemon-logo" className="Logo"/>
         </nav>
     )
 };
