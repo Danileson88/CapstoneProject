@@ -1,10 +1,19 @@
 import './App.css';
+import Footer from'./components/Footer'
+import Header from'./components/Header'
+import Main from'./components/Main'
+import Nav from'./components/Nav'
+
+
 
 function App() {
   return(
-  <p>Hello my Name is Danielson{
-    console.log("hello")
-    }</p>
+  <>
+    <Nav/>
+    <Header/>
+    <Main/>
+    <Footer/>
+  </>
 )}
 
 export default App;
