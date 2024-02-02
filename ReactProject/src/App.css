@@ -1,3 +1,62 @@
 .Logo{
-    width: 200px;
+    max-width: 200px;
+    margin-left: auto;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin-right: auto;
+}
+
+li{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #edefee;
+    display: flex;
+    flex-direction:row;
+    font-size: small;
+    padding-top: 10px;
+    justify-content: center;
+    padding: 20px 20px;
+}
+
+.footer-img{
+    max-width: 150px;
+    max-height: 175px;
+    margin-left: 15%;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.Footer-Nav{
+    font-weight: bold;
+}
+
+.ul-Footer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Header{
+    background-color: #495e57;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.Main{
+    height: 300px;
 }
