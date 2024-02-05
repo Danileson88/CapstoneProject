@@ -1,6 +1,8 @@
+
+
 .Logo{
     max-width: 200px;
-    margin-left: auto;
+    margin-left: 15%;
 }
 
 .links{
@@ -9,36 +11,38 @@
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
+    flex-wrap: wrap;
+
 }
+
 
 ul{
     list-style: none;
     display: flex;
     margin-right: auto;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
 li{
     margin: 0 10px;
     cursor: pointer;
+    min-width: 100px;
 }
 
 footer{
     background-color: #edefee;
     display: flex;
-    flex-direction:row;
     font-size: small;
     padding-top: 10px;
     justify-content: center;
     padding: 20px 20px;
+    flex-wrap: wrap;
 }
 
 .footer-img{
     max-width: 150px;
     max-height: 175px;
-    margin-left: 15%;
-    margin-top: auto;
-    margin-bottom: auto;
-    
 }
 
 .Footer-Nav{
@@ -46,8 +50,8 @@ footer{
 }
 
 .ul-Footer{
-    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 
