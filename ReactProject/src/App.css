@@ -39,6 +39,14 @@ footer{
     justify-content: center;
 }
 
+@media (max-width: 767px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .footer-img{
     max-width: 150px;
     max-height: 175px;
@@ -57,15 +65,31 @@ footer{
 
 .Header{
     background-color: #495e57;
-    height: 300px;
+    min-height:  300px;
     margin-top: 10px;
     display: flex;
     position:relative;
-    min-height:fit-content;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-width: 100px;
     padding-bottom: 20px;
+    max-width: auto;
+}
+
+@media (max-width: 767px) {
+    .Header, .header-text, .header-title{
+        flex-direction: column;
+        align-items: center;
+        min-height: auto;
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .links,ul{
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
 
 .header-text{
@@ -99,6 +123,12 @@ footer{
     margin-top:50px;
     margin-bottom: -50px;
     margin-right: 80px;
+}
+
+@media (max-width: 767px) {
+    .Hero-img{
+        display: none;
+    }
 }
 
 .Reserve-btn{

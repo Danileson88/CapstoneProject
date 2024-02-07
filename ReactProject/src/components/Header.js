@@ -13,7 +13,7 @@ export default function Header() {
                 </h3>
                 <button className="Reserve-btn">Reserve a Table</button>
             </div>
-            <img src="images/Hero-image.png" className="Hero-img"/>
+            <img src="images/Hero-image.png" className="Hero-img" alt="delicious-dish"/>
         </header>
     )
 };
