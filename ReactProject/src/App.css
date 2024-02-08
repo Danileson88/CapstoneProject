@@ -1,8 +1,8 @@
 
 
 .Logo{
-    max-width: 200px;
-    margin-left: 15%;
+    width: 150px;
+    margin-left: 13%;
 }
 
 .links{
@@ -12,6 +12,7 @@
     align-items: center;
     font-weight: bold;
     flex-wrap: wrap;
+    margin-right: 7%;
 }
 
 
@@ -30,7 +31,7 @@ li{
 }
 
 footer{
-    background-color: #edefee;
+    background-color: #fbdabb;
     display: flex;
     font-size: small;
     padding-top: 10px;
@@ -44,6 +45,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 }
 
@@ -74,7 +76,7 @@ footer{
     padding-bottom: 20px;
     max-width: auto;
 }
-
+/* break point for mobile version of viewpoint */
 @media (max-width: 767px) {
     .Header, .header-text, .header-title{
         flex-direction: column;
@@ -83,18 +85,19 @@ footer{
         margin-inline: auto;
     }
 }
-
+/* break point for mobile version of viewpoint */
 @media (max-width: 767px) {
     .links,ul{
         display: block;
         flex-direction: column;
         flex-wrap: wrap;
+        font-size:xx-large;
     }
 }
 
 .header-text{
     max-width: 280px;
-    margin-left: 16%;
+    margin-left: 12%;
     color: white;
 }
 
@@ -116,15 +119,16 @@ footer{
 }
 
 .Hero-img{
-    max-width: 290px;
-    height: 350px;
+    width: 280px;
+    height: 370px;
     min-width: 290px;
-    border-radius: 30px;
-    margin-top:50px;
-    margin-bottom: -50px;
-    margin-right: 80px;
+    border-radius: 15px;
+    margin-top:25px;
+    margin-bottom: -80px;
+    margin-right: 170px;
 }
-
+/* break point, that changes 
+    the view for mobile viewpoints. */
 @media (max-width: 767px) {
     .Hero-img{
         display: none;
@@ -141,5 +145,58 @@ footer{
 }
 
 .Main{
-    height: 300px;
+    max-height: 600px;
+    padding-top: 100px;
+}
+
+.main-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-specials-txt{
+    margin-left: 12%;
+}
+
+.main-menu-btn{
+    background-color: #f4ce14;
+    font-weight: bold;
+    border-radius: 15px;
+    height: 45px;
+    border: none;
+    margin-right: 180px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-wrap: nowrap;
+    text-align: center;
+}
+
+.main-card{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin-left: 12%;
+}
+.card-1{
+    display: inline-block;
+}
+
+.cost{
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.card-2{
+
+}
+.card-3{
+    margin-left: 10px;
+}
+
+.greeksalad-img,.dessert-img,.bruschetta-img{
+    max-width: 300px;
+    height: 250px;
+    border-radius: 15px 15px 0px 0px;
+    width: 225px;
 }
