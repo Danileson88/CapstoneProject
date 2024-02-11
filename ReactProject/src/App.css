@@ -171,27 +171,40 @@ footer{
     text-align: center;
 }
 
-.main-card{
+.grid-card{
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
     margin-left: 12%;
-}
-.card-1{
-    display: inline-block;
-}
-
-.cost{
-    font-size: 20px;
-    margin-left: 30px;
+    background-color: white;
+    gap: 20px;
 }
 
-.card-2{
-
+.card-details{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -10px;
+    justify-content: center;
 }
-.card-3{
-    margin-left: 10px;
+
+.card-text{
+    width: fit-content;
+}
+
+.card-details h2{
+    margin-right: 30px;
+}
+
+.card-1, .card-2, .card-3{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-color:#edefee;
+    margin-bottom: 50px;
+    width: min-content;
+}
+
+.delivery-icon{
+    width: 20px;
 }
 
 .greeksalad-img,.dessert-img,.bruschetta-img{
@@ -199,4 +212,5 @@ footer{
     height: 250px;
     border-radius: 15px 15px 0px 0px;
     width: 225px;
+    margin-top: -12px;
 }
