@@ -18,7 +18,9 @@ export default function Main() {
                             cheese,garnishd with crucny garlic and rosemary
                             croutons.
                         </p>
-                        <h3>Order Delivery</h3>
+                        <a href="">
+                            <h3>Order Delivery</h3>
+                        </a>
                         <img className="delivery-icon" src="images/delivery-icon.png" alt="delivery-icon"/>
                     </div>    
                 </div>
@@ -27,6 +29,15 @@ export default function Main() {
                     <div className="card-details">
                         <h2>Bruschetta</h2>
                         <p>$12.99</p>
+                        <p className="card-text">The famous greek salad of crispy lettuce,
+                            peppers, Olives and our Chicago style feta
+                            cheese,garnishd with crucny garlic and rosemary
+                            croutons.
+                        </p>
+                        <a href="">
+                            <h3>Order Delivery</h3>
+                        </a>
+                        <img className="delivery-icon" src="images/delivery-icon.png" alt="delivery-icon"/>
                     </div>
                 </div>
                 <div className="card-3">
@@ -34,6 +45,15 @@ export default function Main() {
                     <div className="card-details">
                         <h2>Lemon Cake</h2>
                         <p>$12.99</p>
+                        <p className="card-text">The famous greek salad of crispy lettuce,
+                            peppers, Olives and our Chicago style feta
+                            cheese,garnishd with crucny garlic and rosemary
+                            croutons.
+                        </p>
+                        <a href="">
+                            <h3>Order Delivery</h3>
+                        </a>
+                        <img className="delivery-icon" src="images/delivery-icon.png" alt="delivery-icon"/>
                     </div>
                 </div>
             </div>                
