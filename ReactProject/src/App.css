@@ -213,6 +213,15 @@ footer{
     margin-right: 10px;
 }
 
+.rating-txt{
+    margin-left: 10px;
+}
+
+.rating{
+    color:#495e57;
+    margin-left: 20px;
+}
+
 .greeksalad-img,.dessert-img,.bruschetta-img{
     max-width: 250px;
     height: 200px;
