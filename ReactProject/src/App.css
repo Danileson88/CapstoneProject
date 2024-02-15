@@ -206,6 +206,7 @@ footer{
 
 .delivery-icon{
     width: 20px;
+    margin-right: 70px;
 }
 .card-details > a{
     text-decoration: none;
@@ -213,8 +214,8 @@ footer{
 }
 
 .greeksalad-img,.dessert-img,.bruschetta-img{
-    max-width: 300px;
-    height: 250px;
+    max-width: 250px;
+    height: 200px;
     border-radius: 15px 15px 0px 0px;
     width: 2250px;
     margin-top: -12px;

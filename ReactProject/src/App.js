@@ -8,12 +8,12 @@ import Nav from'./components/Nav'
 
 function App() {
   return(
-  <>
-    <Nav/>
-    <Header/>
-    <Main/>
-    <Footer/>
-  </>
+    <div className='Home-Page'>
+      <Nav/>
+      <Header/>
+      <Main/>
+      <Footer/>
+    </div>
 )}
 
 export default App;
