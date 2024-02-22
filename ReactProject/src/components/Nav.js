@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 const routes = [
     {path: "/", name: "Home"},
     {path: "/about", name: "About"},
-    {path: "/contact", name: "Contact"},
+    {path: '/contact', name: "Contact"},
     { path: '/menu', name: 'Menu' },
     { path: '/reservations', name: 'Reservations' },
     { path: '/order', name: 'Order Online' },
