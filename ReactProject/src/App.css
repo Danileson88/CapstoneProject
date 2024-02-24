@@ -25,11 +25,12 @@ li{
     flex-direction: row;
 }
 
-.nav-links{
+.nav-links, .nav-links:visited{
     text-decoration: none;
     margin: 0 10px;
     cursor: pointer;
     min-width: 100px;
+    color: black;
 }
 
 .nav-links:active{
@@ -237,6 +238,8 @@ footer{
     display: flex;
     justify-content: center;
     gap: 90px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .testimonials-section > h1{
@@ -251,41 +254,41 @@ footer{
 
 .card{
     background-color:#edefee;
-    margin-bottom: -20px;
-    padding-bottom: auto;
-    border:none;
-    border-width: 2px;
-    border-color:#495e57;
-    width: fit-content;
-    margin-bottom: 30px;
-    border-radius: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px 0 #afb2b1;
+}
+
+.stars-container{
+    display: flex;
+    gap: 2px;
+    justify-content: center;
 }
 
 
 .star-img{
-    width: 20px;
-    margin-left: 16px;
+    width:20px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .profile-img{
     width: 100px;
     height:100px;
-    border: solid;
-    border-color: #f4ce14;
-    border-radius: 5px;
-    margin-left: -10px;
-    margin-right: 10px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 4px 0 black;
 }
 
 .img-name{
     display: flex;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 20px;
+    padding-bottom: 20px;
 }
 
 .img-name > h2{
-    margin-right: 20px;
+    position: relative;
+    top: 50px;
 }
 
 .greeksalad-img,.dessert-img,.bruschetta-img{
@@ -374,9 +377,17 @@ footer{
 .aboutpage-link{
    position: absolute;
    top: 50px;
+   left:auto;
 }
 
-.aboutpage-home{
+.aboutpage-home, .aboutpage-home:visited{
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
+    border: solid;
+    border-width: 10px;
+    border-color:#afb2b1;
+    color: white;
+    background-color: #afb2b1;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0px black;
 }
