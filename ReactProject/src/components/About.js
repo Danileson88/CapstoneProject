@@ -3,6 +3,7 @@ import React from "react";
 export default function About(props) {
     return(
         <section className="about-section">
+            <img className="about-hero-img" src="images/Hero-image.png" />
             <div className="about-title">
                 <h1>Little Lemon</h1>
                 <h3>Chicago</h3>

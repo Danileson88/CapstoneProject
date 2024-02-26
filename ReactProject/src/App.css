@@ -82,7 +82,29 @@ footer{
 }
 /* break point for mobile version of viewpoint */
 @media (max-width: 767px) {
-    .nav-ul, .links{
+    
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-images{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .burger-menu{
+        width: auto;
+        height: 50px;
+        margin-top: 15px;
+        border-radius: 30px;
+    }
+
+    .burger-menu:active{
+        background-color: grey;
+    }
+    
+    .nav-ul{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -132,10 +154,29 @@ footer{
         text-align: center;
     }
 
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -50px;
+    }
+
+    .about-hero-img{
+        display: inline-block;
+        width: 100%;
+        border-radius: 30px;
+    }
+
 }
 
-.greek-salad{
-    border-radius: 10px;
+@media (min-width: 767px) {
+    .about-hero-img{
+    display: none;
+    width: 300px;
+    }
+    .burger-menu{
+        display: none;
+    }
 }
 
 .header-text{
