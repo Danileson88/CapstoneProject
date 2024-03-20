@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Main() {
     return(
         <main className="Main">
             <div className="main-title">
                 <h1 className="main-specials-txt">This Weeks Specials!</h1>
-                <button className="main-menu-btn" >online Menu</button>
+                <Link to="/order" className="main-menu-btn" >online Menu</Link>
             </div>
             <div className="grid-card">
                 <div className="card-1">
@@ -18,9 +19,9 @@ export default function Main() {
                             cheese,garnishd with crucny garlic and rosemary
                             croutons.
                         </p>
-                        <a href="">
+                        <Link to="/order">
                             <h3>Order Delivery</h3>
-                        </a>
+                        </Link>
                         <img className="delivery-icon" src="images/delivery-icon.png" alt="delivery-icon"/>
                     </div>    
                 </div>
@@ -34,9 +35,9 @@ export default function Main() {
                             cheese,garnishd with crucny garlic and rosemary
                             croutons.
                         </p>
-                        <a href="">
+                        <Link to="/order">
                             <h3>Order Delivery</h3>
-                        </a>
+                        </Link>
                         <img className="delivery-icon" src="images/delivery-icon.png" alt="delivery-icon"/>
                     </div>
                 </div>
@@ -50,9 +51,9 @@ export default function Main() {
                             cheese,garnishd with crucny garlic and rosemary
                             croutons.
                         </p>
-                        <a href="">
+                        <Link to="/order">
                             <h3>Order Delivery</h3>
-                        </a>
+                        </Link>
                         <img className="delivery-icon" src="images/delivery-icon.png" alt="delivery-icon"/>
                     </div>
                 </div>

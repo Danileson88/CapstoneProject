@@ -1,3 +1,5 @@
+
+
 .body{
     margin: 0;
     padding: 0;
@@ -219,6 +221,16 @@ footer{
     padding: 10px;
     font-weight: bold;
     border: none;
+    text-decoration: none;
+}
+
+.reserve-link{
+    text-decoration: none;
+    
+}
+
+.reserve-link:visited{
+    color: black;
 }
 
 .Main{
@@ -239,13 +251,19 @@ footer{
     background-color: #f4ce14;
     font-weight: bold;
     border-radius: 15px;
-    height: 45px;
+    height: 40px;
     border: none;
     margin-right: 180px;
     padding-left: 30px;
     padding-right: 30px;
     text-wrap: nowrap;
-    text-align: center;
+    text-decoration: none;
+    padding-top:18px;
+    margin-bottom: 50px;
+}
+
+.main-menu-btn:visited{
+    color: black;
 }
 
 .grid-card{
@@ -432,8 +450,9 @@ footer{
     color: #f4ce14;
 }
 
-.contact-link{
+.contact-link .contact-link:visited{
     text-decoration: none;
+    color: black;
 }
 
 
@@ -456,4 +475,23 @@ footer{
     background-color: #afb2b1;
     border-radius: 10px;
     box-shadow: 3px 3px 5px 0px black;
+}
+
+.menu-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.menu-title{
+    font-size: 50px;
+    color:#495e57;
+}
+
+.booking-container{
+    display: grid;
+    max-width: 200px;
+    gap: 20px;
 }
