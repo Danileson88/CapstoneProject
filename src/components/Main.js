@@ -10,7 +10,7 @@ export default function Main() {
             </div>
             <div className="grid-card">
                 <div className="card-1">
-                    <img className="greeksalad-img" src="images/Greek-salad.png"/>
+                    <img className="greeksalad-img" src="images/Greek-salad.png" alt="salad"/>
                     <div className="card-details">
                         <h2>Greek Salad</h2>
                         <p>$12.99</p>

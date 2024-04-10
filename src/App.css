@@ -495,3 +495,9 @@ footer{
     max-width: 200px;
     gap: 20px;
 }
+
+.Booking-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
