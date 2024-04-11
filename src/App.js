@@ -10,6 +10,7 @@ import Aboutpage from './pages/About-page';
 import Contact from './pages/Contact';
 import Menu from './pages/menu-page';
 import Reservations from './pages/Reservations-page';
+import Confirmedbooking from './pages/ConfirmedBooking';
 import React, { useState, useEffect, useReducer } from "react";
 import { fetchAPI, submitAPI } from './components/bookingAPI';
 
@@ -70,9 +71,8 @@ function App() {
           <Reservations
             availableTimes={availableTimes}
             dispatch={dispatch}
-            submitBooking={submitAPI}
-          />
-        } />
+          />}/>
+        <Route path='/confirmedBooking' element={<Confirmedbooking/>}></Route>
       </Routes>
     </BrowserRouter>
   );
