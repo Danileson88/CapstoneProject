@@ -9,7 +9,7 @@ export default function Reservations({ availableTimes }) {
   const [guest, setGuest] = useState('');
   const [occasion, setOccasion] = useState('');
   const [bookedTimes, setBookedTimes] = useState([]);
-  const navigate = useNavigate(); // Initialize useNavigate hook
+  const navigate = useNavigate();
 
   const handleDateChange = (event) => {
     const selectedDate = event.target.value;
@@ -53,19 +53,20 @@ export default function Reservations({ availableTimes }) {
       <div className="Booking-div">
         <form className="booking-container" onSubmit={handleSubmit}>
           <label htmlFor='res-date'>Choose date</label>
-          <input type='date' id='res-date' value={date} onChange={handleDateChange} />
+          <input type='date' id='res-date' required value={date} onChange={handleDateChange} />
           <label htmlFor='res-time'>Choose time</label>
-          <select value={time} onChange={handleTimeChange}>
+          <select value={time} onChange={handleTimeChange} required>
             {filteredTimes.map((availTime, index) => (
               <option key={index} value={availTime}>{availTime}</option>
             ))}
           </select>
           <label htmlFor="guests">Number of guests</label>
-          <input type="number" placeholder="1" min="1" max="10" id="guests" value={guest} onChange={e => setGuest(e.target.value)} />
+          <input type="number" placeholder="1" min="1" max="10" id="guests" value={guest} onChange={e => setGuest(e.target.value)}
+          required/>
           <label htmlFor="occasion" value={occasion}>Occasion</label>
           <select id="occasion" value={occasion} onChange={e => setOccasion(e.target.value)}>
-            <option>Birthday</option>
-            <option>Anniversary</option>
+            <option required>Birthday</option>
+            <option required>Anniversary</option>
           </select>
           <button type="submit">Submit</button>
         </form>
@@ -73,3 +74,5 @@ export default function Reservations({ availableTimes }) {
     </div>
   );
 };
+
+module = Reservations

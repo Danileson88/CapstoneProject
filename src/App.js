@@ -18,9 +18,7 @@ function App() {
   const [availableTimes, setAvailableTimes] = useState([]);
   const [dispatch, setDispatch] = useState(null);
 
-  useEffect(() => {
-    initializeTimes();
-  }, []);
+ 
 
   const initializeTimes = async () => {
     try {
@@ -31,6 +29,10 @@ function App() {
       console.error("Error initializing times:", error);
     }
   };
+
+  useEffect(() => {
+    initializeTimes();
+  }, []);
 
   const updateTimes = async (selectedDate) => {
     try {
@@ -48,11 +50,13 @@ function App() {
   
     switch (action.type) {
       case 'UPDATE_TIMES':
+        // Return the updated state directly
         return updateTimes(action.payload.selectedDate);
       default:
         return state;
     }
   };
+  
 
   const [state, stateDispatch] = useReducer(availabilityReducer, []);
 
